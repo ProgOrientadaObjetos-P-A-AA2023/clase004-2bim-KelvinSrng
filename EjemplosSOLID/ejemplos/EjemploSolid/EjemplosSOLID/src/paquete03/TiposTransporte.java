@@ -14,8 +14,8 @@ public class TiposTransporte {
     private TransporteTaxi ttaxi;
     private TransporteBus ttbus;
     private TransporteTransvia transvia;
-    private TransporteAereo aereo;
-    private TransporteMaritimo maritimo;
+    // private TransporteAereo aereo;
+    // private TransporteMaritimo maritimo;
     
     public void establecerTransporteTaxi(TransporteTaxi taxi){
         ttaxi = taxi;
@@ -25,12 +25,20 @@ public class TiposTransporte {
         ttbus = bus;
     }
     
+    public void establecerTransporteTransvia(TransporteTransvia x){
+        transvia = x;
+    }
+    
     public TransporteTaxi obtenerTransporteTaxi(){
         return ttaxi;
     }
     
     public TransporteBus obtenerTransporteBus(){
         return ttbus;
+    }
+    
+    public TransporteTransvia obtenerTransporteTransvia(){
+        return transvia;
     }
     
     public void establecerPromedioTarifas(){
@@ -42,6 +50,7 @@ public class TiposTransporte {
     public double obtenerPromedioTarifas(){
         return promedioTarifas;
     }
+    
     
     
 }
