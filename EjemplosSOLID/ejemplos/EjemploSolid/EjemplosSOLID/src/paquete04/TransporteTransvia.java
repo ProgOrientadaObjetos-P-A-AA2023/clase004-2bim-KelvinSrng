@@ -17,7 +17,7 @@ public class TransporteTransvia extends Transporte {
 
     @Override
     public void establecerTarifa() {
-        tarifa = 2.00 + 0.10;
+        tarifa = 20.00 + 0.10;
     }
 
     public String obtenerCooperativaBus() {

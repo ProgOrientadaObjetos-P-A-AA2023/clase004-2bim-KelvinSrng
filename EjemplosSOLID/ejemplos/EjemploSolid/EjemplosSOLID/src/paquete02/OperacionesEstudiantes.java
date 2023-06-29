@@ -32,9 +32,15 @@ public class OperacionesEstudiantes {
         edadminima = edadMinima;
     }
     
-    public void establecerListaCiudadesEstudiantes(String s) {
+    public void establecerListaCiudadesEstudiantes() {
         
-        listaCiudadesEstudiantes = s;
+        for(Persona e : estudiantes){
+        
+        
+        listaCiudadesEstudiantes = String.format("%s\n%s\n", listaCiudadesEstudiantes,
+                e.obtenerCiudad().obtenerNombre());
+        
+        }
         
     }
     
@@ -61,7 +67,6 @@ public class OperacionesEstudiantes {
     }
 
     public double obtenerPromedioEdades() {
-
         return promedioEdades;
     }
 
@@ -74,4 +79,7 @@ public class OperacionesEstudiantes {
         return edadmaxima;
     }
     
+    public String obtenerListaCiudadesEstudiantes() {
+        return listaCiudadesEstudiantes;
+    }
 }

@@ -10,7 +10,7 @@ class TransporteTransvia {
     }
     
     public void establecerTarifa(){
-        tarifa = 2.00 + 0.10;
+        tarifa = 20.00 + 0.10;
     }
     
     public String obtenerCooperativaTransvia(){
